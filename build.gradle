@@ -42,12 +42,17 @@ dependencies {
             "org.openmbee.mms:storage:${mmsVersion}",
             "org.openmbee.mms:groups:${mmsVersion}",
             "org.springframework.boot:spring-boot-starter-web",
-            'org.springframework.boot:spring-boot-starter-actuator',
-            "org.postgresql:postgresql:42.2.5",
-            "org.springdoc:springdoc-openapi-ui:1.5.4",
-            "org.springdoc:springdoc-openapi-webmvc-core:1.5.4",
-            "org.springdoc:springdoc-openapi-security:1.5.4",
-            "org.zalando:logbook-spring-boot-starter:2.2.1"
+            "org.springframework.boot:spring-boot-starter-actuator",
+            "org.postgresql:postgresql:42.2.27",
+            "org.zalando:logbook-spring-boot-starter:2.2.1",
+            "ch.qos.logback:logback-classic:1.2.11",
+            'org.springdoc:springdoc-openapi-ui:1.6.9',
+            "org.springdoc:springdoc-openapi-webmvc-core:1.6.9",
+            "org.springdoc:springdoc-openapi-security:1.6.9",
+            //resolve https://nvd.nist.gov/vuln/detail/CVE-2022-1471
+            "org.yaml:snakeyaml:2.0",
+            "org.apache.lucene:lucene-core:8.10.0",
+            "com.fasterxml.jackson.core:jackson-core:2.15.0",
     )
     testImplementation(
             'org.springframework.boot:spring-boot-starter-test'
